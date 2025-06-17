@@ -48,6 +48,7 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow-x: hidden;
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -63,6 +64,7 @@ body {
   color: #555;
   text-align: left;
   background-color: #ffffff;
+   overflow-x: hidden;
  
 }
 
@@ -84,6 +86,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  margin-left: 20px;
 }
 
 abbr[title],
@@ -373,6 +376,7 @@ h1, .h1 {
 @media (max-width: 1200px) {
   h1, .h1 {
     font-size: calc(1.375rem + 1.5vw);
+    padding-left: 20px;
   }
 }
 
@@ -395,16 +399,18 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 @media (max-width: 1200px) {
   h4, .h4 {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
+    padding-top: 50px;
   }
 }
 
 h5, .h5 {
   font-size: 1.25rem;
+  padding:10px
 }
 
 h6, .h6 {
@@ -446,17 +452,20 @@ h6, .h6 {
 @media (max-width: 1200px) {
   .display-3 {
     font-size: calc(1.575rem + 3.9vw);
+    padding: 20px;
   }
 }
 
 .display-4 {
-  font-size: 2rem;
+  font-size: 2.8rem;
   font-weight: 200;
   line-height: 1.2;
 }
 @media (max-width: 1200px) {
   .display-4 {
-    font-size: 0.75rem
+    font-size: 1rem;
+    padding-top: 10px;
+    line-height: 1.5;
   }
 }
 
@@ -628,6 +637,15 @@ pre code {
 .no-gutters > [class*=col-] {
   padding-right: 0;
   padding-left: 0;
+}
+.container,
+.container-fluid,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  padding: 0;
+  height: auto;
 }
 
 .col-xl,
@@ -2922,6 +2940,7 @@ fieldset:disabled a.btn {
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0;
+  margin-left: 20px;
 }
 
 .btn-sm, .btn-group-sm > .btn {
@@ -3047,6 +3066,7 @@ input[type=button].btn-block {
     right: 0;
     left: auto;
   }
+  
 }
 @media (min-width: 992px) {
   .dropdown-menu-lg-left {
@@ -6045,6 +6065,7 @@ button.bg-dark:focus {
 
 .d-block {
   display: block !important;
+  margin-left: 20px;
 }
 
 .d-table {
@@ -7295,6 +7316,7 @@ button.bg-dark:focus {
 .mb-3,
 .my-3 {
   margin-bottom: 1rem !important;
+  margin-left: 20px;
 }
 
 .ml-3,
@@ -9401,7 +9423,7 @@ button.bg-dark:focus {
 .text-truncate {
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 .text-left {
@@ -9794,7 +9816,8 @@ h6 {
     border: none !important;
     justify-content: center;
     align-items: center;
-    width: fit-content;
+    width: 100%;
+    flex-direction: column;
   }
 }
 @media (min-width: 992px) {
