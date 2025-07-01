@@ -3,7 +3,7 @@
 @import "https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap";
 
 :root {
-  --blue: #007bff;
+  /* --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
@@ -23,14 +23,20 @@
   --warning: #ffc107;
   --danger: #dc3545;
   --light: #ffffff;
-  --dark: #343a40;
-  --breakpoint-xs: 0;
+  --dark: #343a40; */
+  --primary: #1E2A78;
+  --secondary: #00AEEF;
+  --light-bg: #F8EAF0;
+  --light-bg-end: #FDF6F9;
+  --text-white: #FFFFFF;
+   --text-dark: #000000;
+  /* --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Raleway", sans-serif;
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --breakpoint-xl: 1200px; */
+  --font-family:'Poppins', 'Montserrat', 'Segoe UI', 'Arial', sans-serif;
+  /* --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; */
   overflow-x: hidden;
 }
 
@@ -44,7 +50,7 @@
 } */
 
 html {
-  font-family:"Poppins";
+  font-family:'Poppins', 'Montserrat', 'Segoe UI', 'Arial', sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -162,7 +168,7 @@ a {
   background-color: transparent;
 }
 a:hover {
-  color: #c7321e;
+  color: #00AEEF;
   text-decoration: underline;
 }
 
@@ -372,6 +378,7 @@ h1, h2, h3, h4, h5, h6,
 
 h1, .h1 {
   font-size: 2.5rem;
+  color:#00AEEF;
 }
 @media (max-width: 1200px) {
   h1, .h1 {
@@ -485,7 +492,7 @@ small,
 mark,
 .mark {
   padding: 0.2em;
-  background-color: #fcf8e3;
+  background-color: #F8EAF0;
 }
 
 .list-unstyled {
@@ -2479,7 +2486,7 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #007bff;
+  background-color: #1E2A78;
   border-color: #007bff;
 }
 .btn-primary:hover {
@@ -3872,7 +3879,7 @@ input[type=button].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #ff8c00 ;
+  background-color: #00AEEF ;
 }
 
 .nav-fill > .nav-link,
@@ -4463,13 +4470,13 @@ input[type=button].btn-block {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #E45F4E;
+  color: #00AEEF;
   background-color: #fff;
   border: 1px solid #dee2e6;
 }
 .page-link:hover {
   z-index: 2;
-  color: #c7321e;
+  color: #00AEEF;
   text-decoration: none;
   background-color: #e9ecef;
   border-color: #dee2e6;
@@ -4486,8 +4493,8 @@ input[type=button].btn-block {
 .page-item.active .page-link {
   z-index: 3;
   color: #fff;
-  background-color: #E45F4E;
-  border-color: #E45F4E;
+  background-color: #00AEEF;
+  border-color: #00AEEF;
 }
 .page-item.disabled .page-link {
   color: #6c757d;
@@ -4543,11 +4550,11 @@ a.badge:hover, a.badge:focus {
 
 .badge-primary {
   color: #fff;
-  background-color: #E45F4E;
+  background-color: #00AEEF;
 }
 a.badge-primary:hover, a.badge-primary:focus {
   color: #fff;
-  background-color: #dd3722;
+  background-color: #00AEEF;
 }
 a.badge-primary:focus, a.badge-primary.focus {
   outline: 0;
@@ -5839,17 +5846,17 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color:#007bff !important;
+  background-color:#1E2A78!important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #dd3722 !important;
+  background-color: #1E2A78 !important;
 }
 
 .bg-secondary {
-  background-color:#ff8c00   !important;
+  background-color:#00AEEF  !important;
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
@@ -9532,7 +9539,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color:#007bff !important;
+  color:#1E2A78 !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -9540,7 +9547,7 @@ a.text-primary:hover, a.text-primary:focus {
 }
 
 .text-secondary {
-  color: #ff8c00 !important;
+  color: #00AEEF !important;
 }
 
 a.text-secondary:hover, a.text-secondary:focus {
@@ -9800,7 +9807,7 @@ h6 {
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #E45F4E;
+  color: #00AEEF;
 }
 
 .carousel-caption {
